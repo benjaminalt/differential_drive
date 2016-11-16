@@ -1,8 +1,6 @@
 <launch>
-  <node name="diff_tf.py" pkg="differential_drive" type="diff_tf"/>
-  <node name="twist_to_motors.py" pkg="differential_drive" type="twist_to_motors" />
-  <node name="wheel_loopback.py" pkg="differential_drive" type="wheel_loopback" />
-  <node name="pid_velocity.py" pkg="differential_drive" type="pid_velocity" />
-  <node name="virtual_joystick.py" pkg="differential_drive" type="virtual_joystick" />
-  <node name="wheel_scaler.py" pkg="differential_drive" type="wheel_scaler"/>
+  <node name="diff_tf" pkg="differential_drive" type="diff_tf.py"/>
+  <node name="twist_to_motors" pkg="differential_drive" type="twist_to_motors.py" />
+  <node name="pid_velocity" pkg="differential_drive" type="pid_velocity.py" />
+  <node name="virtual_joystick" pkg="differential_drive" type="virtual_joystick.py" />
 </launch>
